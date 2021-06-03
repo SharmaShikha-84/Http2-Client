@@ -1,0 +1,87 @@
+*   Trying 192.168.99.199:8000...
+* Connected to 192.168.99.199 (192.168.99.199) port 8000 (#0)
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* h2_process_pending_input: All data in connection buffer processed
+* http2_send len=117
+* h2 header: :method:GET
+* h2 header: :path:/nnrf-nfm/v1/nf-instances/e219be29-c62c-4710-a8d5-4e48680a6080
+* h2 header: :scheme:http
+* h2 header: :authority:192.168.99.199:8000
+* h2 header: accept:*/*
+* http2_send request allowed 1 (easy handle 0x7ef890)
+* Using Stream ID: 1 (easy handle 0x7ef890)
+> GET /nnrf-nfm/v1/nf-instances/e219be29-c62c-4710-a8d5-4e48680a6080 HTTP/2
+Host: 192.168.99.199:8000
+accept: */*
+
+* http2_recv: easy 0x7ef890 (stream 1) win 33554432/65535
+* nread=55
+* Got SETTINGS
+* MAX_CONCURRENT_STREAMS == 250
+* ENABLE_PUSH == TRUE
+* Connection state changed (MAX_CONCURRENT_STREAMS == 250)!
+* Got SETTINGS
+* MAX_CONCURRENT_STREAMS == 250
+* ENABLE_PUSH == TRUE
+* h2_process_pending_input: All data in connection buffer processed
+* http2_recv returns AGAIN for stream 1
+* http2_recv: easy 0x7ef890 (stream 1) win 33554432/33554432
+* nread=970
+* on_begin_headers() was called
+* h2 status: HTTP/2 200 (easy 0x7ef890)
+* h2 header: content-type: application/json
+* h2 header: content-length: 910
+* h2 header: date: Thu, 03 Jun 2021 10:57:19 GMT
+* on_frame_recv() header 1 stream 1
+* Store 105 bytes headers from stream 1 at 0x7f3190
+* 910 data received for stream 1 (15369 left in buffer 0x7f3190, total 1015)
+* on_frame_recv() header 0 stream 1
+* on_stream_close(), NO_ERROR (err 0), stream 1
+* Removed stream 1 hash!
+* h2_process_pending_input: All data in connection buffer processed
+* http2_recv: returns 1015 for stream 0
+* Data returned for PAUSED stream 0
+< HTTP/2 200 
+HTTP/2 200 
+< content-type: application/json
+content-type: application/json
+< content-length: 910
+content-length: 910
+< date: Thu, 03 Jun 2021 10:57:19 GMT
+date: Thu, 03 Jun 2021 10:57:19 GMT
+
+< 
+* http2_recv: easy 0x7ef890 (stream 0) win 33553522/4294967295
+* h2_process_pending_input: All data in connection buffer processed
+* http2_recv returns 0, http2_handle_stream_close
+* Connection #0 to host 192.168.99.199 left intact
+* Found bundle for host 192.168.99.199: 0x7f83f0 [can multiplex]
+* 17 bytes stray data read before trying h2 connection
+* h2_process_pending_input: All data in connection buffer processed
+* h2_process_pending_input: nothing to do in this session
+* Re-using existing connection! (#0) with host 192.168.99.199
+* Connected to 192.168.99.199 (192.168.99.199) port 8000 (#0)
+* http2_send len=117
+* h2 header: :method:GET
+* h2 header: :path:/nnrf-nfm/v1/nf-instances/e219be29-c62c-4710-a8d5-4e48680a6080
+* h2 header: :scheme:http
+* h2 header: :authority:192.168.99.199:8000
+* h2 header: accept:*/*
+* http2_send request allowed 0 (easy handle 0x7ef890)
+* Using Stream ID: 3 (easy handle 0x7ef890)
+* on_stream_close(), REFUSED_STREAM (err 7), stream 3
+* Removed stream 3 hash!
+> GET /nnrf-nfm/v1/nf-instances/e219be29-c62c-4710-a8d5-4e48680a6080 HTTP/2
+Host: 192.168.99.199:8000
+accept: */*
+
+* http2_recv: easy 0x7ef890 (stream 0) win 33553522/4294967295
+* h2_process_pending_input: All data in connection buffer processed
+* h2_process_pending_input: nothing to do in this session
+* stopped the pause stream!
+* HTTP/2 DISCONNECT starts now
+* HTTP/2 DISCONNECT done
+* Closing connection 0
+curl_easy_perform() failed: Error in the HTTP2 framing layer
