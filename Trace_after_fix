@@ -1,0 +1,49 @@
+* Connected to 192.168.99.199 (192.168.99.199) port 8000 (#0)
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7f090c0009a0)
+> PUT /nnrf-nfm/v1/nf-instances/e219be29-c62c-4710-a8d5-4e48680a6080 HTTP/2
+Host: 192.168.99.199:8000
+user-agent: bf-am-http
+content-type: application/json
+cache-control: no-cache
+accept: application/json
+content-length: 1118
+
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 250)!
+< HTTP/2 201 
+< content-type: application/json
+< location: http://192.168.99.199:8000/nnrf-nfm/v1/nf-instances/e219be29-c62c-4710-a8d5-4e48680a6080
+< content-length: 867
+< date: Thu, 03 Jun 2021 14:50:22 GMT
+< 
+* Connection #0 to host 192.168.99.199 left intact
+* Found bundle for host 192.168.99.199: 0x7f090c007940 [can multiplex]
+* 17 bytes stray data read before trying h2 connection
+* Connection 0 seems to be dead!
+* Closing connection 0
+* Hostname 192.168.99.199 was found in DNS cache
+*   Trying 192.168.99.199:8000...
+* Connected to 192.168.99.199 (192.168.99.199) port 8000 (#1)
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x7f090c0009a0)
+> PUT /nnrf-nfm/v1/nf-instances/e219be29-c62c-4710-a8d5-4e48680a6080 HTTP/2
+Host: 192.168.99.199:8000
+user-agent: bf-am-http
+content-type: application/json
+cache-control: no-cache
+accept: application/json
+content-length: 1118
+
+* We are completely uploaded and fine
+* Connection state changed (MAX_CONCURRENT_STREAMS == 250)!
+< HTTP/2 201 
+< content-type: application/json
+< location: http://192.168.99.199:8000/nnrf-nfm/v1/nf-instances/e219be29-c62c-4710-a8d5-4e48680a6080
+< content-length: 867
+< date: Thu, 03 Jun 2021 14:50:22 GMT
+< 
